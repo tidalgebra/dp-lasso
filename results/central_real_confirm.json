@@ -1,0 +1,38 @@
+{
+  "phase": "confirmation",
+  "mode": "confirm",
+  "seeds": [
+    8701,
+    8702,
+    8703,
+    8704,
+    8705,
+    8706,
+    8707,
+    8708
+  ],
+  "sizes": [
+    25000,
+    50000,
+    100000,
+    200000
+  ],
+  "epsilons": [
+    0.95
+  ],
+  "levels": [
+    5,
+    20,
+    50,
+    100
+  ],
+  "lambdas": [
+    0.1
+  ],
+  "iterations": 8,
+  "feature_radius": 1.0,
+  "label_bound": 1.0,
+  "clipping_note": "both constants are exact on this design, not assumed",
+  "task": "ACS income above 50,000, CA/NY/TX 2018 1-Year",
+  "metric": "test NMSE against the training-mean predictor"
+}

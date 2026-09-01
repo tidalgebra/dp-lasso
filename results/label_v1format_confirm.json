@@ -1,0 +1,61 @@
+{
+  "phase": "confirmation",
+  "mode": "confirm",
+  "seeds": [
+    6301,
+    6302,
+    6303,
+    6304,
+    6305,
+    6306,
+    6307,
+    6308
+  ],
+  "sizes": [
+    2000,
+    4000,
+    8000,
+    16000
+  ],
+  "sparsities": [
+    5
+  ],
+  "epsilons": [
+    0.95
+  ],
+  "bounds": [
+    null
+  ],
+  "lambdas": [
+    0.75
+  ],
+  "layout": "first-submission layout, p = 2n",
+  "settings": {
+    "gaussian": {
+      "design": "gaussian",
+      "noise": "gaussian",
+      "noise_scale": 1.0,
+      "coef": "decay",
+      "label_bound": 1.615
+    },
+    "bounded_uniform": {
+      "design": "bounded_uniform",
+      "noise": "gaussian",
+      "noise_scale": 1.0,
+      "coef": "decay",
+      "label_bound": 1.615
+    },
+    "rademacher": {
+      "design": "rademacher",
+      "noise": "uniform",
+      "noise_scale": 0.05,
+      "coef": "decay",
+      "label_bound": 1.615
+    }
+  },
+  "iterations": 60,
+  "lambda_rule": "0.75 * sigma * sqrt(2 log p / n)",
+  "delta_rule": "10/n^1.1",
+  "calibration": "analytic Gaussian (Balle-Wang 2018)",
+  "matched_release": "one released response vector per cell, shared by both arms"
+}

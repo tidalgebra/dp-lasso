@@ -1,0 +1,50 @@
+{
+  "phase": "exploration",
+  "mode": "confirm",
+  "seeds": [
+    5301,
+    5302,
+    5303,
+    5304,
+    5305,
+    5306,
+    5307,
+    5308
+  ],
+  "sizes": [
+    800000,
+    1600000,
+    3200000,
+    6400000
+  ],
+  "dims": [
+    100
+  ],
+  "sparsities": [
+    4,
+    8
+  ],
+  "epsilons": [
+    1.0
+  ],
+  "c_clip": [
+    0.03
+  ],
+  "c_lam": [
+    0.03
+  ],
+  "c_trunc": [
+    0.1
+  ],
+  "keep_mult": [
+    2,
+    4,
+    8
+  ],
+  "delta_stat": 0.05,
+  "noise_sd": 0.5,
+  "design": "isotropic Gaussian; Sigma = I so mu = L = 1",
+  "randomizer": "Duchi et al. l2-ball mechanism, shared by both procedures",
+  "matching": "identical records per round; K = ceil(log n) batches of size n//K",
+  "zhu_note": "Trunc applied to the freshly formed iterate, per the text; arXiv v1 Algorithm 2 line 6 prints a subscript t-1"
+}

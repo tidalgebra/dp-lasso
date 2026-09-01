@@ -1,0 +1,60 @@
+{
+  "phase": "confirmation",
+  "mode": "confirm",
+  "seeds": [
+    7701,
+    7702,
+    7703,
+    7704,
+    7705,
+    7706,
+    7707,
+    7708
+  ],
+  "sizes": [
+    200000,
+    400000,
+    800000,
+    1600000
+  ],
+  "epsilons": [
+    1.0
+  ],
+  "lambdas": [
+    0.05
+  ],
+  "taus": [
+    0.03,
+    0.07,
+    0.15,
+    0.3,
+    0.6
+  ],
+  "keeps": [
+    10,
+    25,
+    50,
+    100
+  ],
+  "features": [
+    "AGEP",
+    "COW",
+    "SCHL",
+    "MAR",
+    "SEX",
+    "RAC1P",
+    "WKHP",
+    "OCCP"
+  ],
+  "binned": {
+    "AGEP": 5,
+    "WKHP": 5,
+    "OCCP": 500
+  },
+  "task": "ACS income above 50,000, CA/NY/TX 2018 1-Year",
+  "privacy": "pure epsilon-LDP, sequentially interactive, disjoint batches",
+  "score_radius": 2.0,
+  "score_radius_note": "exact on a unit-norm row design with responses in {-1,+1}",
+  "randomizer": "l2-ball mechanism, shared by every private arm",
+  "metric": "test NMSE against the training-mean predictor"
+}
