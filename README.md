@@ -1,7 +1,7 @@
-# Differentially private Lasso under three privacy placements — experiment code
+# Differentially Private Lasso for High-Dimensional Sparse Regression across Privacy Regimes — experiment code
 
-Code and results for the numerical study in *Differentially Private Lasso under Three
-Privacy Placements: ISTA-Based Procedures with Finite-Iteration Guarantees*.
+Code and results for the numerical study in *Differentially Private Lasso for High-Dimensional
+Sparse Regression across Privacy Regimes*.
 
 Three thresholded first-order procedures are compared with a published baseline in the
 same privacy placement:
